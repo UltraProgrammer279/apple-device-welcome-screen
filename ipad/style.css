@@ -118,6 +118,9 @@ svg {
     .flex {
         display: flex;
     }
+    .image-iphone-hero {
+        margin-top: 0px;
+    }
 }
 
 @media (min-width: 920px) {
