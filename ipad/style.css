@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+html, body {
+    color: #000;
+    background: #fff;
+}
+
+html, body, h1, h2, p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+a {
+    display: block
+}
+
+.hero {
+    background: #f7f8ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.flex {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+p {
+    margin: 22px 0;
+    margin-top: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.flex p {
+    font-size: 14px;
+}
+
+a.main-cta {
+    padding: 15px 20px;
+    background: #000;
+    color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+svg {
+    color: rgb(88, 88, 88);
+}
+
+.image-iphone-hero {
+    width: 240px;
+    height: 180px;
+    background-image: url(assets/ipad_pro_12_9_homescreen.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.image-iphone-hero.ipadpro-12_9 {
+    border-radius: 6px;
+}
+
+.blip-section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1080px;
+}
+
+.card {
+    background: #f7f8ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+.card h2 {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2em;
+    }
+    .flex p {
+        font-size: 16px;
+    }
+    .hero {
+        text-align: left;
+    }
+    .main-hero-cnt {
+        margin: auto;
+        padding-right: 20px;
+    }
+    .main-cta {
+        margin: 0 0 0 0 !important;
+    }
+    .flex {
+        display: flex;
+    }
+}
+
+@media (min-width: 920px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .flex p {
+        font-size: 20px;
+    }
+    .hero {
+        text-align: left;
+        padding: 60px 40px;
+    }
+    .blip-section {
+        padding: 60px 40px;
+    }
+    .image-iphone-hero {
+        width: 360px;
+        height: 270px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background: #000;
+        color: #fff;
+    }
+    .hero, .card {
+        background: #21212e;
+    }
+    svg {
+        color: rgb(179, 179, 179);
+    }
+    p {
+        color: rgb(179, 179, 179);
+    }
+    a.main-cta {
+        background: #fff;
+        color: #000;
+    }
+}
